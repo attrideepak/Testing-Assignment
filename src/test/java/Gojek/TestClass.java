@@ -1,6 +1,7 @@
 package Gojek;
 
 
+import Gojek.utility.FileReaderUtility;
 import org.testng.annotations.Test;
 
 /**
@@ -14,4 +15,6 @@ public class TestClass {
     public void testFile(){
         System.out.println(fileReaderUtility.fileContentInList("/src/main/java/Gojek/textfiles/TestText.txt"));
     }
+
+
 }
