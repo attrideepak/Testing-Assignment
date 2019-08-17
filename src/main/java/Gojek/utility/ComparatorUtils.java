@@ -4,6 +4,7 @@ import Gojek.interfaces.IComparator;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -15,6 +16,7 @@ import java.util.ArrayList;
  * Created by Deepakattri on 15/08/19.
  */
 public class ComparatorUtils implements IComparator {
+    JsonUtils jsonUtils = new JsonUtils();
     @Override
     public ArrayList<String> getfileContentInList(String path) {
         BufferedReader reader = null;
@@ -43,23 +45,23 @@ public class ComparatorUtils implements IComparator {
     }
 
     @Override
-    public String getApiResponse(String apiEndPoint) {
+    public JSONObject getApiResponse(String apiEndPoint) {
         RequestSpecification request = RestAssured.given();
         Response response = null;
-        String apiResponse = null;
+        JSONObject responseJson = null;
         try{
             response = request.get(apiEndPoint);
         }catch (Exception e){
             e.getMessage();
         }
         if(response==null){
-            apiResponse = null;
+            responseJson = null;
             System.out.println("Request is invalid could not get any response");
         }else {
-            apiResponse = response.getBody().prettyPrint();
-            System.out.println(apiResponse);
+            responseJson = new JSONObject(response.getBody().prettyPrint());
+            System.out.println(responseJson);
         }
-        return apiResponse;
+        return responseJson;
     }
 
 
@@ -78,13 +80,10 @@ public class ComparatorUtils implements IComparator {
             s = firstList.size();
             System.out.println("No. of requests being compared " + s + "since first file has lesser enteries ");
         for (int i = 0; i<s; i++){
-            String apiFromFirstList = getApiResponse(firstList.get(i));
-            String apiFromSecondList = getApiResponse(secondList.get(i));
-            if(apiFromFirstList.equalsIgnoreCase(apiFromSecondList)){
-                System.out.println(apiFromFirstList + "equals" + apiFromSecondList);
-            }else {
-                System.out.println(apiFromFirstList + "not equals" + apiFromSecondList);
-            }
+            JSONObject apiResponseFromFirstList = getApiResponse(firstList.get(i));
+            JSONObject apiRsponseFromSecondList = getApiResponse(secondList.get(i));
+            JsonUtils.jsonToMap(apiResponseFromFirstList);
+
         }
 
     }

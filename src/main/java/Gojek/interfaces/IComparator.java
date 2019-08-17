@@ -1,5 +1,7 @@
 package Gojek.interfaces;
 
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 /**
@@ -10,5 +12,5 @@ public interface IComparator {
 
     public ArrayList<String> getfileContentInList(String path);
 
-    public String getApiResponse(String apiEndPoint);
+    public JSONObject getApiResponse(String apiEndPoint);
 }

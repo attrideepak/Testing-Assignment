@@ -1,7 +1,6 @@
 package Gojek;
 
-import static org.junit.Assert.assertTrue;
-
+import org.json.JSONObject;
 import org.junit.Test;
 
 /**
@@ -15,6 +14,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue()
     {
-        assertTrue( true );
+        String s = null;
+        System.out.println(JSONObject.NULL);
     }
 }
