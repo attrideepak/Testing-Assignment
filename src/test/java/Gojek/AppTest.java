@@ -1,6 +1,6 @@
 package Gojek;
 
-import org.json.JSONObject;
+import Gojek.utility.ComparatorUtils;
 import org.junit.Test;
 
 /**
@@ -8,13 +8,10 @@ import org.junit.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    ComparatorUtils comparatorUtils = new ComparatorUtils();
     @Test
     public void shouldAnswerWithTrue()
     {
-        String s = null;
-        System.out.println(JSONObject.NULL);
+        comparatorUtils.compare("/src/main/java/Gojek/textfiles/FirstFile.txt","/src/main/java/Gojek/textfiles/SecondFile.txt");
     }
 }

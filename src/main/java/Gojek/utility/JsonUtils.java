@@ -8,25 +8,28 @@ import org.json.JSONObject;
 import java.util.*;
 
 /**
- * Created by Aeepakattri on 16/08/19.
+ * Created by Deepakattri on 16/08/19.
  */
 public class JsonUtils {
 
     public static Map<String, Object> jsonToMap(JSONObject object) throws JSONException {
         Map<String, Object> map = new HashMap<>();
-        Iterator<String>jsonKeys = object.keys();
-        while(jsonKeys.hasNext()) {
-            String key = jsonKeys.next();
-            Object value = object.get(key);
+        if(object != null) {
+            Iterator<String> jsonKeys = object.keys();
+            while (jsonKeys.hasNext()) {
+                String key = jsonKeys.next();
+                Object value = object.get(key);
 
-            if(value instanceof JSONArray) {
-                value = jsonToList((JSONArray) value);
+                if (value instanceof JSONArray) {
+                    value = jsonToList((JSONArray) value);
+                }
+
+                if (value instanceof JSONObject) {
+                    value = jsonToMap((JSONObject) value);
+                }
+                map.put(key, value);
             }
 
-             if(value instanceof JSONObject) {
-                value = jsonToMap((JSONObject) value);
-            }
-            map.put(key, value);
         }
         return map;
     }
