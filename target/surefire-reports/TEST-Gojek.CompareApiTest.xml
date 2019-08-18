@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Gojek.CompareApiTest" time="7.113" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/Aeepakattri/TestingAssignment/target/test-classes:/Users/Aeepakattri/TestingAssignment/target/classes:/Users/Aeepakattri/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/Aeepakattri/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/Aeepakattri/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/Aeepakattri/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/Aeepakattri/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/rest-assured/4.0.0/rest-assured-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy/2.5.6/groovy-2.5.6.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.6/groovy-xml-2.5.6.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/Aeepakattri/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Aeepakattri/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/Aeepakattri/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar:/Users/Aeepakattri/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy-json/2.5.6/groovy-json-2.5.6.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/xml-path/4.0.0/xml-path-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/Aeepakattri/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/Aeepakattri/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/Aeepakattri/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/Aeepakattri/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/Aeepakattri/.m2/repository/org/json/json/20190722/json-20190722.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value=""/>
+    <property name="user.country.format" value="IN"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/Aeepakattri/TestingAssignment/target/surefire/surefirebooter7477232511203019402.jar /Users/Aeepakattri/TestingAssignment/target/surefire 2019-08-18T09-31-39_871-jvmRun1 surefire5211465036130039721tmp surefire_01430045516305067336tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="surefire.test.class.path" value="/Users/Aeepakattri/TestingAssignment/target/test-classes:/Users/Aeepakattri/TestingAssignment/target/classes:/Users/Aeepakattri/.m2/repository/junit/junit/4.11/junit-4.11.jar:/Users/Aeepakattri/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/Aeepakattri/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/Aeepakattri/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/Aeepakattri/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/rest-assured/4.0.0/rest-assured-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy/2.5.6/groovy-2.5.6.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy-xml/2.5.6/groovy-xml-2.5.6.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/Aeepakattri/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/Aeepakattri/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/Aeepakattri/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/Aeepakattri/.m2/repository/org/hamcrest/hamcrest-library/2.1/hamcrest-library-2.1.jar:/Users/Aeepakattri/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/json-path/4.0.0/json-path-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/codehaus/groovy/groovy-json/2.5.6/groovy-json-2.5.6.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/rest-assured-common/4.0.0/rest-assured-common-4.0.0.jar:/Users/Aeepakattri/.m2/repository/io/rest-assured/xml-path/4.0.0/xml-path-4.0.0.jar:/Users/Aeepakattri/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/Aeepakattri/.m2/repository/javax/xml/bind/jaxb-api/2.2.12/jaxb-api-2.2.12.jar:/Users/Aeepakattri/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.2.10/jaxb-osgi-2.2.10.jar:/Users/Aeepakattri/.m2/repository/org/apache/sling/org.apache.sling.javax.activation/0.1.0/org.apache.sling.javax.activation-0.1.0.jar:/Users/Aeepakattri/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/Users/Aeepakattri/.m2/repository/org/json/json/20190722/json-20190722.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/Aeepakattri"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/Aeepakattri/TestingAssignment"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/Aeepakattri/TestingAssignment/target/surefire/surefirebooter7477232511203019402.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="Aeepakattri"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/Aeepakattri/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/gc/5k2rcgvn511_fh0l5cgg0zt80000gq/T/"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="/Users/Aeepakattri/TestingAssignment"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/Aeepakattri/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.ext.dirs" value="/Users/Aeepakattri/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase name="compare" classname="Gojek.CompareApiTest" time="6.888">
+    <failure message="The following asserts failed:&#10;	No. of API end points in both files are different expected [true] but found [false],&#10;	/api/unknown/4 is not a valid http/https request expected [true] but found [false],&#10;	htts://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],&#10;	htps://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],&#10;	/api/unknown/4 is not a valid http/https request expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	No. of API end points in both files are different expected [true] but found [false],
+	/api/unknown/4 is not a valid http/https request expected [true] but found [false],
+	htts://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+	htps://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+	/api/unknown/4 is not a valid http/https request expected [true] but found [false]
+	at Gojek.CompareApiTest.compare(CompareApiTest.java:61)
+</failure>
+    <system-out><![CDATA[No. of requests being compared 5 since first file has lesser enteries 
+Response for https://reqres.in/api/users/1 is :
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+    }
+}
+Response for https://reqres.in/api/users/1 is :
+{
+    "data": {
+        "id": 1,
+        "email": "george.bluth@reqres.in",
+        "first_name": "George",
+        "last_name": "Bluth",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+    }
+}
+https://reqres.in/api/users/1 equals https://reqres.in/api/users/1
+Response for http://reqres.in/api/users/4 is :
+{
+    "data": {
+        "id": 4,
+        "email": "eve.holt@reqres.in",
+        "first_name": "Eve",
+        "last_name": "Holt",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
+    }
+}
+Response for https://reqres.in/api/users/4 is :
+{
+    "data": {
+        "id": 4,
+        "email": "eve.holt@reqres.in",
+        "first_name": "Eve",
+        "last_name": "Holt",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"
+    }
+}
+http://reqres.in/api/users/4 equals https://reqres.in/api/users/4
+Request "/api/unknown/4" is invalid could not get any response
+Request "htts://reqres.in/api/users/4" is invalid could not get any response
+/api/unknown/4 not equals htts://reqres.in/api/users/4
+Request "htps://reqres.in/api/users/4" is invalid could not get any response
+Request "/api/unknown/4" is invalid could not get any response
+htps://reqres.in/api/users/4 not equals /api/unknown/4
+Request "https://xyzzyfggz.com/ffg" is invalid could not get any response
+Response for http://reqres.in/api/users/2 is :
+{
+    "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janet",
+        "last_name": "Weaver",
+        "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+    }
+}
+https://xyzzyfggz.com/ffg not equals http://reqres.in/api/users/2
+]]></system-out>
+  </testcase>
+</testsuite>

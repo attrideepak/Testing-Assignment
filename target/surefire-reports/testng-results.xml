@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="6910" started-at="2019-08-18T04:01:46Z" finished-at="2019-08-18T04:01:53Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="6910" started-at="2019-08-18T04:01:46Z" finished-at="2019-08-18T04:01:53Z">
+      <class name="Gojek.CompareApiTest">
+        <test-method status="FAIL" signature="compare(java.lang.String, java.lang.String)[pri:0, instance:Gojek.CompareApiTest@2c6a3f77]" name="compare" duration-ms="6883" started-at="2019-08-18T04:01:46Z" description="This test read api endpoints from two textfiles and comapre their responses" data-provider="testdata" finished-at="2019-08-18T04:01:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/src/main/java/Gojek/textfiles/FirstFileWithInvalidRequest]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/src/main/java/Gojek/textfiles/SecondFileWithInvalidRequests]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+No. of API end points in both files are different expected [true] but found [false],
+/api/unknown/4 is not a valid http/https request expected [true] but found [false],
+htts://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+htps://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+/api/unknown/4 is not a valid http/https request expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+No. of API end points in both files are different expected [true] but found [false],
+/api/unknown/4 is not a valid http/https request expected [true] but found [false],
+htts://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+htps://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+/api/unknown/4 is not a valid http/https request expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at Gojek.CompareApiTest.compare(CompareApiTest.java:61)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compare -->
+      </class> <!-- Gojek.CompareApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

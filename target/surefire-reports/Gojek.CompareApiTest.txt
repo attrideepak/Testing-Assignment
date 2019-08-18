@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: Gojek.CompareApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.113 s <<< FAILURE! - in Gojek.CompareApiTest
+compare(Gojek.CompareApiTest)  Time elapsed: 6.888 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	No. of API end points in both files are different expected [true] but found [false],
+	/api/unknown/4 is not a valid http/https request expected [true] but found [false],
+	htts://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+	htps://reqres.in/api/users/4 is not a valid http/https request expected [true] but found [false],
+	/api/unknown/4 is not a valid http/https request expected [true] but found [false]
+	at Gojek.CompareApiTest.compare(CompareApiTest.java:61)
+

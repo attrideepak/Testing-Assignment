@@ -2,7 +2,6 @@ package Gojek.utility;
 
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.*;
@@ -12,7 +11,7 @@ import java.util.*;
  */
 public class JsonUtils {
 
-    public static Map<String, Object> jsonToMap(JSONObject object) throws JSONException {
+    public static Map<String, Object> jsonToMap(JSONObject object){
         Map<String, Object> map = new HashMap<>();
         if(object != null) {
             Iterator<String> jsonKeys = object.keys();
